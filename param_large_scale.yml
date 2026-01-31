@@ -1,0 +1,25 @@
+enviroment_generate:
+  EV_num: 120
+  BSS_num: 15
+  alpha: 0.5
+  beta: 0.5
+  tao: 0.6
+  area_width: 20
+  max_Battery_num: 10
+  # 随机数种子若为空，则随机设置种子
+  random_seed: 10
+  save_path: ""
+GA_param:
+  pop_size: 100
+  maxFEs: 50000
+  eliteSize: 10
+  mutationRate: 0.01
+  crossRate: 0.8
+  random_seed: 
+NES_param:
+  I: 100
+data_path:
+  load_path: ""
+  save_path: ""
+
+
