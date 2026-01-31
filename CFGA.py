@@ -166,6 +166,8 @@ def CFGA(problem, pop_size=500, maxFEs=500000, eliteSize=50, mutationRate=0.01, 
 
         # 交叉变异（保留精英不参与，从 eliteSize 开始）
         for i in range(eliteSize, pop_size, 2):
+            if i + 1 >= pop_size:
+                break
             p1, p2 = pop[i], pop[i + 1]
             c1, c2 = cross(p1, p2, problem, crossRate)
             c1 = mutate(c1, mutationRate, problem)
